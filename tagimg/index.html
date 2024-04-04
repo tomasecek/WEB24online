@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základní použití obrázků</title>
+</head>
+<body style="text-align: center;">
+   <h1>Základní použití obrázků</h1>
+
+    <a href="img20.html">next...</a> &nbsp; &#9; &nbsp; <a href="indexlp.html">lorem picsum...</a>
+
+    <h2>Základní obrázek</h2>
+    <img src="obrazek.jpg" alt="Popis obrázku">
+
+    <h2>Obrázek s definovanými rozměry</h2>
+    <img src="obrazek.jpg" alt="Popis obrázku" width="240" height="135">
+
+    <h2>Obrázek s responzivním designem (zkus zmenšit stránku)</h2>
+    <img src="obrazek.jpg" alt="Popis obrázku" style="max-width:20%;height:auto;">
+
+    <h2>Obrázek jako odkaz</h2>
+    <a href="https://www.example.com" target="_blank">
+        <img src="obrazek.jpg" alt="Popis obrázku">
+    </a>
+
+    <h2>Obrázek s mapou obrázků</h2>
+
+   <img src="map.jpg" alt="Testovací obrázek" usemap="#obrazekMapa" width="480" height="270">
+   <map name="obrazekMapa">
+      <!-- Obdélníková oblast -->
+    <area shape="rect" coords="10,10,200,100" alt="Obdélníková Oblast" href="mapa.html" target="_blank">
+   </map>
+
+
+</body>
+</html>

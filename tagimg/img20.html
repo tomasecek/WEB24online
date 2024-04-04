@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokročilé způsoby použití obrázků</title>
+    <style>
+        .image-overlay {
+            position: absolute;
+            width: 200px;
+        }
+        .image-overlay img {
+            width: 100%;
+            height: auto;
+        }
+        .image-overlay .text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+        }
+        .image-filter {
+            filter: sepia(100%);
+        }
+        .image-hover:hover {
+            opacity: 0.7;
+        }
+        .image-background {
+            background-image: url('obrazek.jpg');
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .image-circle {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>Pokročilé způsoby použití obrázků</h1>
+
+    <a href="imgfilter.html">next...</a> &nbsp; &#9; &nbsp; <a href="img20lp.html">lorem picsum...</a>
+
+    <div class="image-overlay">
+        <img src="obrazek.jpg" alt="Překryv">
+        <div class="text">Obrázek s Překryvem</div>
+    </div>
+
+    <h2>Obrázek s CSS Filtrem</h2>
+    <img class="image-filter" src="obrazek.jpg" alt="CSS Filtr">
+
+    <h2>Obrázek s Hover Efektem</h2>
+    <img class="image-hover" src="obrazek.jpg" alt="Hover Efekt">
+
+    <h2>Obrázek jako Pozadí Sekce</h2>
+    <div class="image-background">Sekce s pozadím obrázku</div>
+
+    <h2>Kruhový Obrázek</h2>
+    <img class="image-circle" src="obrazek.jpg" alt="Kruhový Obrázek">
+    
+    <!-- Další příklady... -->
+</body>
+</html>

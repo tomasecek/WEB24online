@@ -1,0 +1,19 @@
+Zadani CCS1 (kaskadove styly v html)
+* zalozte ve slozce web24 slozku css1 a nakopirujte soubory do slozky css1 soubory
+   index.html, validni.html, zastarale.html. Provedte commit  s nazvem „css1zalozeni“.
+* vytvorte si zastupce v prohlizeci pro snadne lokalni prohlizeni css1 (prace pri hodine)
+* prohlednete si zastarale.html a zkuste jej zkontrolovat validatorem, opravte validni.html
+   aby vyvarel vizualne stejnou stranku html (a take nepouzival jakekoliv odkazy).
+* provedte commit s nazvem „validni1“, „validni2“, atp.
+* vytvorte soubor style.css a upravujte jej (napr. body { background-color:lightgrey; }).
+* napojte soubor index.html na style.css, provedte commit.
+* v souboru index.html se vyvarujte primeho pouziti parametru style (klasifikace o stupen).
+* pouzijte class, id, article, neusporadany seznam nastavte tak, aby byla vizualni shoda. 
+* id pouzijte zamerne, tak by, jste otestovali validator a vyvolejte jednu chybu „Duplicate ID“.
+* soubor index.html napojte na web 24.
+Pocet bodu (hvezdicek), desitek procent, ciselneho hodnoceni, slovniho hodnoceni
+* 1, 20%, 5, nedostatecne
+* 3, 30%, 4, dostatecne
+* 5, 50%, 3, dobre
+* 7, 70%, 2, velmi dobre (chvalitebne)
+* 9, 90%, 1, vyborne

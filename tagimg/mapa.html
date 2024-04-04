@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .image-map {
+    position: relative;
+    width: 480px;
+    height: 270px;
+  }
+  .image-map img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .image-map a {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+  }
+  .rect {
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 80px;
+    border: 2px solid red;
+  }
+  .circle {
+    top: 150px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-map">
+  <img src="map.jpg" alt="mapa">
+  <a href="https://www.google.cz/maps/place/Str%C3%A1%C5%BE+nad+Nisou" class="rect" target="_blank"></a>
+  <a href="https://www.google.cz/maps/place/Liberec-Vratislavice+nad+Nisou" class="circle" target="_blank"></a>
+</div>
+
+</body>
+</html>

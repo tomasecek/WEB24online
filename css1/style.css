@@ -1,0 +1,42 @@
+body
+{
+    background-color: lightgray;
+}
+
+p /* Výchozí parametry */
+{
+    color:green
+
+}
+article p
+{
+    color:blueviolet;
+
+}
+
+h1, h2
+{
+
+    color:darkcyan
+}
+
+ul      /* seznam s reckymi písmeny*/
+{
+
+    list-style-type: lower-greek;
+
+}
+
+#autor
+{
+    color:blue;
+
+
+}
+
+.trida
+{
+    color:brown
+
+
+}

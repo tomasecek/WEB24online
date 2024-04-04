@@ -1,0 +1,24 @@
+
+Zadani bootstrap2 (framework pro HTML, CSS a JavaScript)
+
+* zalozte ve slozce web24 slozku bootstrap2 a nakopirujte soubory ze vzoroveho prikladu
+  Provedte commit s nazvem „initfolder“.
+)
+
+* prohlednete si vzor, postupujte dle vykladu (validator atp.)
+
+
+* Pridejte 1 responzivni obrazek, nepouzivejte jine obrazky (klasifikace o stupen).
+
+* v souboru index.html se vyvarujte primeho pouziti parametru style (klasifikace o stupen).
+
+* pouzijte class z bootstrap (nezavadejte vlastní style, klasifikace o stupen)
+
+* Pridejte responzivni menu dle vzoru s hamburger tlacitkem typickym pro mobilni telefony.
+
+* doplnte napojení index.html na web 24.
+
+pokud mate hotovo, vyuzijte cas k vyrizeni komunikace, nebo treba i hry,
+nerušte, spis pomahejte spoluzákum, i pri takoveto cinnosti se lze neco naucit.
+hlucna volna diskuze je nevhodny pristup, neodchazejte drive z vyuky.
+

@@ -1,0 +1,18 @@
+Zadani CSS2 (kaskadove styly v html)
+* zalozte ve slozce web24 slozku css2 a nakopirujte soubory do slozky css2 soubory
+  Provedte commit s nazvem „initfolder“.
+* vytvorte si zastupce v prohlizeci pro snadne lokalni prohlizeni css2 (prace pri hodine)
+* prohlednete si vzor, postupujte dle vykladu (validator atp.)
+* vytvorte soubor style.css a upravujte jej.
+* napojte soubor index.html na style.css, provedte commit.
+* nepouzivejte obrazky (klasifikace o stupen).
+* v souboru index.html se vyvarujte primeho pouziti parametru style (klasifikace o stupen).
+* pouzijte class, id, article.
+* pouzijte a:link a:visited a:fokus a:hover a:active
+* soubor index.html napojte na web 24.
+Pocet bodu (hvezdicek), desitek procent, ciselneho hodnoceni, slovniho hodnoceni
+* 1, 20%, 5, nedostatecne
+* 3, 30%, 4, dostatecne
+* 5, 50%, 3, dobre
+* 7, 70%, 2, velmi dobre (chvalitebne)
+* 9, 90%, 1, vyborne
