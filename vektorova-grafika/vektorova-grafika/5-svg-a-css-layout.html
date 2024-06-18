@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>SVG a CSS Layout</title>
+<style>
+body { background-color: #1e1e1e; color: #d4d4d4;
+    font-family: 'Segoe UI', Sans-serif, Tahoma; margin: 0; padding: 0; }
+a { color: #4fa8ff; text-decoration: none; padding: 10px;
+    display: inline-block; border-radius: 5px;
+    background: #252526; transition: transform 0.01s ease; }
+a:hover { transform: scale(1.1); }
+div { align-items: center; justify-content: space-between;
+    flex-wrap: nowrap; width: 100%; max-width: 600px; margin: 20px auto;
+    padding: 20px; box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    background: #333; border-radius: 8px; }
+</style>
+
+</head>
+<body>
+<p><a href="./index.html">zpět</a></p>
+
+<div onclick="reloadPage()">&#x21BB;</div>
+
+<div>
+	<svg viewBox="0 0 2500 600">
+
+			<rect x="00" y="00" width="2500" height="600" fill="lightsteelblue" />
+			<circle r="80" cx="140" cy="400" fill="none" stroke="#4154FA" stroke-width="50"/>
+			<circle r="180" cx="560" cy="300" fill="none" stroke="#4154FA" stroke-width="50"/>
+			<line x1="200" y1="450" x2="420" y2="185" stroke="#4154FA" stroke-width="48"/>
+
+			<text x="850" y="270" font-family="Tahoma" font-size="250" fill="black"
+			font-weight="bold">Průmyslovka</text>
+
+			<text x="850" y="530" font-family="Tahoma" font-size="250" fill="black"
+			font-weight="bold">Liberec</text>
+
+
+	</svg>
+</div>
+
+<div>
+	<svg viewBox="0 0 2500 600">
+		<line x1="200" y1="500" x2="800" y2="500" stroke="#4154FA" stroke-width="48"/>
+		<!-- Úsečka, x1, y1 a x2, y2 určují začátek a konec čáry. -->
+		<rect x="30" y="30" width="500" height="150" fill="lightsteelblue" />
+		<!-- Obdélník, plný x a y určují polohu obdélníka, width a height jeho šířku a výšku. -->
+		<rect x="600" y="30" width="400" height="150" fill="transparent" stroke="#4154FA" stroke-width="10" />
+		<!-- Obdélník bez vyplnění. -->
+		<polygon points="120,570 180,570 150,360" fill="brown" />
+		<!-- Polygon, seznam bodů může tvořit trojúhelník. -->
+		<circle r="180" cx="1260" cy="210" fill="none" stroke="#4154FA" stroke-width="50"/>
+		<!-- Kružnice, cx a cy určují střed, r je jeho rádius. -->
+		<circle cx="2000" cy="100" r="90" fill="yellow" />
+		<!-- Kruh, cx a cy určují střed kruhu, r je jeho rádius. -->
+		<ellipse cx="150" cy="360" rx="150" ry="80" fill="green" />
+		<!-- Elipsa, cx a cy určují střed elipsy, zatímco rx a ry jsou její horizontální a vertikální rádius. -->
+		<polyline points="720,360 870,450 1020,360 1170,450" fill="none" stroke="orange" stroke-width="15" />
+		<!-- Lomená čára, definovaná seznamem bodů. -->
+		<path d="M1400 450 Q1800 300 2000 450 T2500 450" stroke="limegreen" fill="none" stroke-width="15" />
+		<!-- Path začíná v bodě M a vytváří kvadratickou Bézierovu křivku k bodu Q, který je
+			kontrolním bodem, a odtud do následujícího bodu. Dále symetrický průběh křivky k bodu T. -->
+		<text x="850" y="530" font-family="Tahoma" font-size="80" fill="black"
+		font-weight="bold">Do SVG lze umístit text.</text>
+		<!-- Text v SVG.  font-weight="bold" font-family="Arial Verdana Helvetica Tahoma"  -->
+	</svg>
+</div>
+
+<div>
+	<p>
+		Scalable Vector Graphics (SVG) je založený na XML jazyku pro popis dvourozměrných vektorových
+		a smíšených vektorových/rastrových grafik. SVG umožňuje definovat grafické prvky pomocí čistě
+		textového formátu, který je dobře čitelný a editovatelný, ale přitom kompaktní
+		a optimalizovatelný pro webové aplikace. Na rozdíl od tradičních rastrových grafických
+		formátů jako JPEG nebo PNG, grafiky ve formátu SVG neztrácejí na kvalitě při zvětšení
+		nebo zmenšení, což je činí ideálními pro použití v různých zařízeních
+		a rozlišeních displejů.</p>
+	<p>	SVG je široce podporováno ve všech moderních webových prohlížečích, což umožňuje vývojářům
+		snadno integrovat SVG do webových stránek bez potřeby externích pluginů. S jeho pomocí lze
+		snadno vytvářet komplexní ikony, animace, grafy a interaktivní prvky, které mohou reagovat
+		na uživatelské interakce. Díky tomu, že SVG je založeno na XML, lze tyto prvky snadno
+		stylovat a manipulovat s nimi pomocí CSS a JavaScriptu, což dává vývojářům významnou
+		flexibilitu a kontrolu nad vizuální prezentací webových stránek.</p>
+</div>
+   <script> function reloadPage() { location.href = location.href.split('?')[0] + '?_=' + new Date().getTime(); } </script>
+</body>
+</html>
+
+

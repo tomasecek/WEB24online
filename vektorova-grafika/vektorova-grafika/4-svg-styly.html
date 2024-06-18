@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>SVG a CSS Layout</title>
+<style>
+body { background-color: #1e1e1e;  color: #d4d4d4;  margin: 0;  padding: 0;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+div { align-items: center; justify-content: space-between;  flex-wrap: nowrap; 
+    width: 100%;  max-width: 600px;  margin: 20px auto;  padding: 20px;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.3);  background: #444444;  border-radius: 8px; }
+a { color: #4fa8ff;  text-decoration: none;  padding: 10px; display: inline-block;
+    border-radius: 5px;  background: #353536;  transition: transform 0.01s ease; }
+a:hover { transform: scale(1.2); }
+
+
+.mojei {
+    width: 100px;  /* Definujte šířku */
+    height: 100px; /* Definujte výšku */
+    display: block; /* Zajistěte, že element má blokové formátování */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><circle r="200" cx="400" cy="400" fill="none" stroke="%23385ca3" stroke-width="50"/></svg>');
+    background-size: contain;  /* Zajistí, že celý obrázek se vejde do daného prostoru elementu, aniž by byl oříznut. */
+    background-repeat: no-repeat; /* Zabrání opakování obrázku vrámci jednoho vyobrazení. */
+}
+
+.mojeii {
+    width: 400px;  /* Definujte šířku */
+    height: 100px; /* Definujte výšku */
+    display: block; /* Zajistěte, že element má blokové formátování */
+    background-image: url('vektory5.svg');
+    background-size: contain;  /* Zajistí, že celý obrázek se vejde do daného prostoru elementu, aniž by byl oříznut. */
+    background-repeat: no-repeat; /* Zabrání opakování obrázku vrámci jednoho vyobrazení. */
+ }
+
+
+</style>
+</head>
+
+<body>
+
+<p>
+	<a href="./index.html">zpět</a>
+</p>
+
+<div>
+	<p> Vektorová grafika může být vložena v css, pak jen použita pomocí třídy
+		a jakého koliv tagu (div, používá se i, asi by bylo nejsprávnější span).
+		Pozor zkuste vložit do definice mojei třeba jen enter... pravděpodobně
+        toto nebude dobře fungovat.</p>
+</div>
+
+<div>
+	<i class="mojei"> </i>
+</div>
+
+<div>
+	<i class="mojeii"> </i>
+</div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,1 @@
+Vytvorena stranka s tabulkou cislovanym seznamem dle zadani. Delal jsem to lokalne, az potom na GITHUB (neslo mi to naclonovat ve skole), proto nemam commity, tak jak maji byt. :

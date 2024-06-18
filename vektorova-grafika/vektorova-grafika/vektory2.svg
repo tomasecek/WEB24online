@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 0 2500 600">
+		<circle r="80" cx="140" cy="400" fill="none" stroke="#4154FA" stroke-width="50"/>
+		<circle r="180" cx="560" cy="300" fill="none" stroke="#4154FA" stroke-width="50"/>
+		<line x1="200" y1="450" x2="420" y2="185" stroke="#4154FA" stroke-width="48"/>
+
+
+</svg>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>SVG a CSS Layout</title>
+<style>
+body { background-color: #1e1e1e;  color: #d4d4d4;  margin: 0;  padding: 0;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+div { align-items: center; justify-content: space-between;  flex-wrap: nowrap; 
+    width: 100%;  max-width: 600px;  margin: 20px auto;  padding: 20px;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.3);  background: #444444;  border-radius: 8px; }
+a { color: #4fa8ff;  text-decoration: none;  padding: 10px; display: inline-block;
+    border-radius: 5px;  background: #353536;  transition: transform 0.01s ease; }
+a:hover { transform: scale(1.2); }
+</style>
+</head>
+
+<body>
+
+	<!-- skrité vložení SVG -->
+	<svg style="display:none;"> <symbol id="icon-svg" viewBox="0 0 800 600">
+
+		<rect x="00" y="00" width="2500" height="600" fill="lightsteelblue" />
+		<circle r="80" cx="140" cy="400" fill="none" stroke="#4154FA" stroke-width="50"/>
+		<circle r="180" cx="560" cy="300" fill="none" stroke="#4154FA" stroke-width="50"/>
+		<line x1="200" y1="450" x2="420" y2="185" stroke="#4154FA" stroke-width="48"/>
+
+
+
+	<circle r="80" cx="140" cy="400" fill="none" stroke="#385ca3" stroke-width="50"/>
+
+</symbol></svg>
+
+<p>
+	<a href="./index.html">zpět</a>
+</p>
+
+
+<div>
+	<p> Vektorová grafika může být vložena sematicky, skritě pak, zobrazena třeba vícekrát dle potřeb návrháře zobrazena.</p>
+</div>
+
+
+<div>
+	<svg><use xlink:href="#icon-svg"></use></svg>
+</div>
+
+<div>
+	<!-- Opakované použití SVG -->
+	<svg><use xlink:href="#icon-svg"></use></svg>
+</div>
+
+</body>
+
+</html>
+
